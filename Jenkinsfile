@@ -24,7 +24,7 @@ node {
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'password', usernameVariable: 'appId')]) {
        sh '''
-          az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
+          az login --service-principal -u 16972635-7cc2-4a9b-8047-4ae54e67f2a2 -p CEnS-ip.eUAfLOMFCtiOj84B0NMboA.pmp --tenant dab5b5db-6cee-44a7-892c-30a42811f9d1
           az account set -s $AZURE_SUBSCRIPTION_ID
         '''
       }
